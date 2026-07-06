@@ -27,5 +27,5 @@ export const SITE_CONFIG = {
   github: "https://github.com/Mantoariyansyah",
   linkedin: "https://www.linkedin.com/in/manto-ariyansyah-1a74b0252/",
   whatsapp: "https://wa.me/6289688087637",
-  cvUrl: "/cv.pdf",
+  cvUrl: "/CV_Manto_Ariyansyah_Juli_2026.pdf",
 };

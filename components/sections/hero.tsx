@@ -17,7 +17,7 @@ export function Hero() {
     >
       <div className="container grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -28,7 +28,7 @@ export function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
             </span>
             Available for freelance work
-          </motion.div>
+          </motion.div> */}
 
           <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl xl:text-6xl">
             <TextReveal text="Manto Ariyansyah" />

@@ -13,23 +13,17 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, delay: (index % 3) * 0.1, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, delay: (index % 4) * 0.1, ease: [0.22, 1, 0.36, 1] }}
       className="group relative overflow-hidden rounded-3xl border border-border bg-card/40 backdrop-blur-sm transition-shadow duration-300 hover:shadow-2xl"
     >
-      <div className="relative aspect-[16/10] overflow-hidden">
-        <motion.div
-          className="h-full w-full"
-          whileHover={{ scale: 1.08 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-cover"
-          />
-        </motion.div>
+      <div className="relative aspect-[16/10] overflow-hidden bg-muted/30">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         <div className="absolute inset-x-0 bottom-0 flex translate-y-4 items-center gap-2 p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
           {project.github && (
