@@ -20,7 +20,6 @@ export function Footer() {
                 A
               </span>
             </span>
-            Manto Ariyansyah
           </a>
           <p className="max-w-xs text-center text-sm text-muted-foreground md:text-left">
             Frontend Developer crafting fast, accessible, and beautifully animated web experiences.
